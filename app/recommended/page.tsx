@@ -3,7 +3,6 @@ import { cookies } from 'next/headers'
 import { Database } from '../database.types'
 import Recommended from "@/app/recommended/recommended";
 
-
 export default async function Page() {
     const supabase = createServerComponentClient<Database>({ cookies })
 
@@ -16,5 +15,4 @@ export default async function Page() {
             <Recommended session={session} />
         </>
     )
-
 }

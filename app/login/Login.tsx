@@ -21,7 +21,6 @@ export default function LoginForm({ session }: { session: Session | null }) {
         router.refresh();
     }
 
-
     return (
         <div className="flex flex-col  items-center justify-center min-h-screen py-2 px-4 sm:px-0">
             <div className="flex items-center justify-center w-full h-full">

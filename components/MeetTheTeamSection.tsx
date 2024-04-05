@@ -5,7 +5,7 @@ interface ImageLinkProps {
     alt: string;
 }
 
-const ImageLink  = ({ src, alt }: ImageLinkProps) => (
+const ImageLink = ({ src, alt }: ImageLinkProps) => (
     <a href="/#">
         <img className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src={src} alt={alt} />
     </a>
@@ -76,7 +76,7 @@ const MeetTheTeamSection = () => {
             socials: [
                 {
                     href: "social_link1",
-                    icon: <div>Icon1</div>, // replace with your actual icon component
+                    icon: <div>Icon1</div>,
                 },
             ],
         },
@@ -91,11 +91,10 @@ const MeetTheTeamSection = () => {
             socials: [
                 {
                     href: "social_link2",
-                    icon: <div>Icon2</div>, // replace with your actual icon component
+                    icon: <div>Icon2</div>,
                 },
             ],
         },
-        // More team members here...
     ];
 
     return (

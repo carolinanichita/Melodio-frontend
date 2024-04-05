@@ -52,9 +52,6 @@ export default function Navbar({session}: AccountFormProps) {
         }
     }, [user, token]);
 
-
-
-    // Function to handle user sign-out
     const signOut = async () => {
         try {
             await supabase.auth.signOut();
@@ -64,7 +61,6 @@ export default function Navbar({session}: AccountFormProps) {
         router.refresh();
     };
 
-    // Create a reference to Next.js router
     const router = useRouter();
     return (
         <nav className=" border-b border-neutral-600 bg-gray-1100 text-stone-100">
@@ -91,7 +87,6 @@ export default function Navbar({session}: AccountFormProps) {
                         </DropdownMenuTrigger>
                         <DropdownMenuContent className="w-56">
                             <DropdownMenuLabel onClick={() => {
-                                // Redirect to the login page
                                 router.push("/account");
 
                             }}>My Account</DropdownMenuLabel>
@@ -109,7 +104,6 @@ export default function Navbar({session}: AccountFormProps) {
                     </DropdownMenu>
                 ) : (
                     <Button  className="bg-spotify-green rounded-2xl text-stone-100" onClick={() => {
-                        // Redirect to the login page
                         router.push("/login");
 
                     }}>Login</Button>

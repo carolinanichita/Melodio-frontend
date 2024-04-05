@@ -11,7 +11,6 @@ import Link from "next/link";
 import {Separator} from "@/components/ui/seperator";
 import Marquee from "react-fast-marquee";
 
-
 interface Location {
     lng: number;
     lat: number;
@@ -26,7 +25,6 @@ const Page = () => {
     const [songIds, setSongIds] = useState<string[]>([]);
 
     const getCountryLocation = async (country: string): Promise<Location> => {
-        // Replace this with actual API call to get the location of a country
         const url = `https://melodio.azurewebsites.net/coordinates/${country}`;
         const response = await axios.get(url);
         return {lng: response.data.longitude, lat: response.data.latitude};

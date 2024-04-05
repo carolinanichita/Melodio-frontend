@@ -15,5 +15,4 @@ export default async function Account() {
             <AccountForm session={session} />
         </>
     )
-
 }

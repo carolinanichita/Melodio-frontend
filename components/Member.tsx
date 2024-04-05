@@ -8,14 +8,14 @@ type Props = {
 };
 
 
-function Member({name, bio,href, link }: Props) {
-  return(
-      <div className="text-sm">
-        <div>{name}</div>
-        <div >{bio}</div>
-        <img src={href} alt={name}/>
-        <div>{link}</div>
-      </div>
+function Member({ name, bio, href, link }: Props) {
+  return (
+    <div className="text-sm">
+      <div>{name}</div>
+      <div >{bio}</div>
+      <img src={href} alt={name} />
+      <div>{link}</div>
+    </div>
   )
 }
 

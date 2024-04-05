@@ -51,7 +51,7 @@ const Skills = (props: Props) => {
             style={{
               opacity: opacityForBlock(progress, 2),
             }}>
-             Let Melodio World be your gateway to a world of musical wonders! 🌍🎶
+            Let Melodio World be your gateway to a world of musical wonders! 🌍🎶
           </span>
         </div>
       </div>
