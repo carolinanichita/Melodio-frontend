@@ -4,9 +4,7 @@ import Skills from "@/components/Skills";
 import Works from "@/components/Works";
 import TechUsed from "@/components/TechUsed";
 
-
 export default async function Home() {
-
 
     return (
     <>

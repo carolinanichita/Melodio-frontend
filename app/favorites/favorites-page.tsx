@@ -77,14 +77,11 @@ const FavoritesPage = ({session}: AccountFormProps) => {
         };
 
         try {
-            // Step 1: Create the playlist on Spotify
             const response = await axios.post(url, playlistData, config);
             const playlistId = response.data.id;
 
-            // Step 2: Prepare an array of track URIs
             const trackUris = songIds.map(id => `spotify:track:${id}`);
 
-            // Step 3: Add songs to the playlist
             const apiUrl = `https://api.spotify.com/v1/playlists/${playlistId}/tracks`;
             const requestData = {
                 uris: trackUris,

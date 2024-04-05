@@ -23,9 +23,9 @@ const Works = ({ children }: Props) => (
     <TileContent>
       <Tile page={2} renderContent="Carolina" />
     </TileContent>
-      <TileContent>
-          <Tile page={3} renderContent="Ryan" />
-      </TileContent>
+    <TileContent>
+      <Tile page={3} renderContent="Ryan" />
+    </TileContent>
   </TileWrapper>
 );
 

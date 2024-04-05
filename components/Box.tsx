@@ -6,9 +6,9 @@ interface BoxProps {
 }
 
 const Box: React.FC<BoxProps> = ({
-                                     children,
-                                     className
-                                 }) => {
+    children,
+    className
+}) => {
     return (
         <div
             className={twMerge(

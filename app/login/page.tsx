@@ -3,7 +3,6 @@ import { cookies } from 'next/headers'
 import {Database} from "@/types/supabase";
 import LoginForm from "@/app/login/Login";
 
-
 export default async function Login() {
     const supabase = createServerComponentClient<Database>({ cookies })
 

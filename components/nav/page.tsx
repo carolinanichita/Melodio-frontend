@@ -15,5 +15,4 @@ export default async function Account() {
             <Navbar session={session} />
         </>
     )
-
 }
